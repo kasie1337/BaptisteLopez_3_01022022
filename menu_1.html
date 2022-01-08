@@ -2,61 +2,115 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>ohmyfood</title>
 </head>
 <body>
 <header>
-    <h1><i></i>ohmyfood </h1>
+    <h1><i class="fas fa-arrow-left"> </i>ohmyfood </h1>
     <img src="images/a_la_francaise.jpg" alt="Une photo représentant une assiette qui contient un désert"/>
 </header>
 <main>
-    <h1></h1>
-    <article>
+    <h1>À la française</h1>
+    <i class="far fa-heart"></i>
+    <form>
         <h2>ENTREES</h2>
         <section>
-            <h3>Tartare de poulpe acidulé</h3>
-            <p>Aux zestes d'orange 25€</p>
+            <article>
+                <input type="checkbox" id="pulpe" name="check" value="valid">
+                <label for="pulpe">Tartare de poulpe acidulé</label>
+                <p>Aux zestes d'orange 25€</p>
+            </article>
         </section>
         <section>
-            <h3>Velouté de légumes d'antan</h3>
-            <p>Carotte, panais, topinambour 35€</p>
+            <article>
+                <input type="checkbox" id="vegetal" name="check" value="valid">
+                <label for="vegetal">Velouté de légumes d'antan</label>
+                <p>Carotte, panais, topinambour 35€</p>
+            </article>
         </section>
         <section>
-            <h3>Soupe à l'oignon</h3>
-            <p>Revisitée 20€</p>
+            <article>
+                <input type="checkbox" id="ognion" name="check" value="valid">
+                <label for="ognion">Soupe à l'oignon</label>
+                <p>Revisitée 20€</p>
+            </article>
         </section>
-    </article>
 
-    <form>
         <h2>PLATS</h2>
-        <article>
-            <h3></h3>
-            <p></p>
-        </article>
-        <article>
-            <h3></h3>
-            <p></p>
-        </article>
-        <article>
-            <h3></h3>
-            <p></p>
-        </article>
+        <section>
+            <article>
+                <input type="checkbox" id="saint-jacques" name="check" value="valid">
+                <label for="saint-jacques">Coquilles Saint-Jacques</label>
+                <p>Accompagnées d'une purée de panais 40€</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <input type="checkbox" id="duck" name="check" value="valid">
+                <label for="duck">Magret de canard</label>
+                <p>Et parmentier de pommes de terre 35€</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <input type="checkbox" id="ile-et-vilaine" name="check" value="valid">
+                <label for="ile-et-vilaine">Pigeonneau d’Ille-et-Vilaine</label>
+                <p>Sur son lit de gnocchis aux légumes 44€</p>
+            </article>
+        </section>
+
+            <h2>DESSERTS</h2>
+            <section>
+                <article>
+                    <input type="checkbox" id="glass" name="check" value="valid">
+                    <label for="glass">Pétales de violettes glacés</label>
+                    <p>Et purée de noisettes 18€</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <input type="checkbox" id="choco" name="check" value="valid">
+                    <label for="choco">Fondant au chocolat</label>
+                    <p>Revisité 22€</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <input type="checkbox" id="cracker" name="check" value="valid">
+                    <label for="cracker">Millefeuille croustillant</label>
+                    <p>Myrtilles et pâte d’amande 23€</p>
+                </article>
+            </section>
+
+        <section>
+            <div>
+                <button type="button" value="send">Commander
+                </button>
+            </div>
+        </section>
     </form>
-    <form>
-        <h2>DESSERTS</h2>
-        <article>
-            <h3></h3>
-            <p></p>
-        </article>
-        <article>
-            <h3></h3>
-            <p></p>
-        </article>
-        <article>
-            <h3></h3>
-            <p></p>
-        </article>
-    </form>
+
 </main>
+<footer>
+    <section>
+        <h3>ohmyfood</h3>
+        <ul>
+            <li>
+                <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+            </li>
+            <li>
+                <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+            </li>
+            <li>
+                <p>Mentions légales</p>
+            </li>
+            <li>
+                <p>Contact</p>
+            </li>
+        </ul>
+    </section>
+</footer>
 </body>
 </html>
