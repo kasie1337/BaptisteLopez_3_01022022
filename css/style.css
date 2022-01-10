@@ -1,0 +1,45 @@
+@font-face {
+        font-family: 'roboto';
+        src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+}
+@font-face {
+        font-family: 'Shrikhand';
+        src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+}
+
+.body_style{
+      font-family: roboto, sans-serif, Droid Serif;
+}
+
+:root {
+    font-size: 12px;
+        }
+h1{
+        font-size: 2.50rem;
+}
+h2{
+        font-size: 2rem;
+}
+h3{
+        font-size: 1.50rem;
+}
+p{
+font-size: 1.48rem;
+}
+li{
+    font-size: 1.32rem;
+}
+input{
+    font-size: 1.35rem;
+
+}
+.list_work{
+        font-weight: 700;
+}
+.title_pol{
+    font-family: Shrikhand, sans-serif, Droid Serif;
+}
+.city_ppl{
+    font-weight: 700;
+}
