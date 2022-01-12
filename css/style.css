@@ -1,45 +1,126 @@
 @font-face {
-        font-family: 'roboto';
-        src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    font-family: 'roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 }
+
 @font-face {
-        font-family: 'Shrikhand';
-        src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+    font-family: 'Shrikhand';
+    src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 }
 
-.body_style{
-      font-family: roboto, sans-serif, Droid Serif;
+.body_style {
+    font-family: roboto, sans-serif, Droid Serif;
 }
 
 :root {
     font-size: 12px;
-        }
-h1{
-        font-size: 2.50rem;
 }
-h2{
-        font-size: 2rem;
+
+h1 {
+    font-size: 2.50rem;
 }
-h3{
-        font-size: 1.50rem;
+
+h2 {
+    font-size: 2rem;
 }
-p{
-font-size: 1.48rem;
+
+h3 {
+    font-size: 1.50rem;
 }
-li{
-    font-size: 1.32rem;
+
+p {
+    font-size: 1.48rem;
 }
-input{
-    font-size: 1.35rem;
+
+li {
+    font-size: 1.34rem;
+}
+
+input {
+    font-size: 1.34rem;
 
 }
-.list_work{
-        font-weight: 700;
+
+button {
+    font-size: 1.34rem;
 }
-.title_pol{
-    font-family: Shrikhand, sans-serif, Droid Serif;
-}
-.city_ppl{
+
+.list_work {
     font-weight: 700;
 }
+.city_ppl {
+    font-weight: 700;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    background: #EAEAEA;
+    border: unset;
+}
+.position_loc{
+    position: absolute;
+    left: 25%;
+}
+
+.body_style {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(2, 400px) 1200px 300px;
+grid-template-areas: "header"
+                     "working"
+                     "restaurant"
+                     "footer";
+}
+
+.up_page {
+grid-area: header;
+}
+
+.how_work {
+grid-area: working;
+}
+
+.list_food {
+grid-area: restaurant;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto repeat(4, 250px);
+grid-gap: 20px;
+background:#F6F6F6;
+padding: 20px;
+}
+.calc_artc{
+height: calc(100% - 75px);
+}
+.artcl_height {
+height: 100%;
+object-fit: cover;
+background: white;
+border-radius: 20px;
+}
+.size_img{
+height: 100%;
+border-radius: 15px 15px 0 0;
+
+}
+
+.bot_page {
+grid-area: footer;
+
+}
+
+.title_pol {
+font-family: Shrikhand, sans-serif, Droid Serif;
+display: flex;
+justify-content: center;
+margin-bottom: 15px;
+}
+
+.sch_loc {
+display: flex;
+align-items: center;
+position: relative;
+
+}
+
+
