@@ -42,85 +42,120 @@ input {
 
 }
 
+label {
+    font-size: 1.34rem;
+}
+
 button {
     font-size: 1.34rem;
 }
 
 .list_work {
     font-weight: 700;
+    justify-content: center;
+    background: #F6F6F6;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 17px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px silver;
 }
+
 .city_ppl {
     font-weight: 700;
-    text-align: center;
-    height: 50px;
-    width: 100%;
     background: #EAEAEA;
     border: unset;
+    text-align: center;
+    width: 80%;
 }
-.position_loc{
+
+.position_loc {
     position: absolute;
     left: 25%;
+
 }
 
 .body_style {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(2, 400px) 1200px 300px;
-grid-template-areas: "header"
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 400px) 1200px 300px;
+    grid-gap: 40px;
+    grid-template-areas: "header"
                      "working"
                      "restaurant"
                      "footer";
 }
 
 .up_page {
-grid-area: header;
+    grid-area: header;
+    text-align: center;
+    background: #F6F6F6;
 }
 
 .how_work {
-grid-area: working;
+    grid-area: working;
 }
 
 .list_food {
-grid-area: restaurant;
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: auto repeat(4, 250px);
-grid-gap: 20px;
-background:#F6F6F6;
-padding: 20px;
+    grid-area: restaurant;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(4, 250px);
+    grid-gap: 20px;
+    background: #99E2D0;
+    padding: 20px;
 }
-.calc_artc{
-height: calc(100% - 75px);
+
+.calc_artc {
+    height: calc(100% - 75px);
 }
+
 .artcl_height {
-height: 100%;
-object-fit: cover;
-background: white;
-border-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+    background: white;
+    border-radius: 20px;
 }
-.size_img{
-height: 100%;
-border-radius: 15px 15px 0 0;
+
+.size_img {
+    height: 100%;
+    border-radius: 15px 15px 0 0;
 
 }
 
 .bot_page {
-grid-area: footer;
+    grid-area: footer;
 
 }
 
 .title_pol {
-font-family: Shrikhand, sans-serif, Droid Serif;
-display: flex;
-justify-content: center;
-margin-bottom: 15px;
+    font-family: Shrikhand, sans-serif, Droid Serif;
+    display: flex;
+    justify-content: center;
+    background: white;
 }
 
 .sch_loc {
-display: flex;
-align-items: center;
-position: relative;
-
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background: #EAEAEA;
+    height: 50px;
 }
 
+.btn{
+    margin-top: 25px;
+    border: unset;
+    background: #FF79DA;
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+    padding: 0 20px 0 20px;
+    box-shadow: 0 5px 10px silver;
+}
 
+.pad_title{
+    padding: 45px 45px 0 45px;
+}
