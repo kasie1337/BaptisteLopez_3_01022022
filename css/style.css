@@ -47,43 +47,28 @@ label {
 }
 
 button {
-    font-size: 1.34rem;
+    font-size: 1.30rem;
 }
 
 .list_work {
     font-weight: 700;
-    justify-content: center;
     background: #F6F6F6;
-    height: 70px;
+    height: 75px;
     display: flex;
     align-items: center;
     border-radius: 17px;
-    margin-bottom: 20px;
+    margin-top: 25px;
     box-shadow: 0 5px 10px silver;
-}
-
-.city_ppl {
-    font-weight: 700;
-    background: #EAEAEA;
-    border: unset;
-    text-align: center;
-    width: 80%;
-}
-
-.position_loc {
-    position: absolute;
-    left: 25%;
 }
 
 .body_style {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 400px) 1200px auto;
-    grid-gap: 40px;
+    grid-template-rows: repeat(2, 400px) 1260px auto;
     grid-template-areas: "header"
-                     "working"
-                     "restaurant"
-                     "footer";
+                         "working"
+                         "restaurant"
+                         "footer";
 }
 
 .up_page {
@@ -92,52 +77,11 @@ button {
     background: #F6F6F6;
 }
 
-.how_work {
-    grid-area: working;
-    padding: 0 15px;
-}
-
-.list_food {
-    grid-area: restaurant;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30px repeat(4, 250px);
-    grid-gap: 20px;
-    background: #F6F6F6;
-    padding: 20px;
-}
-
-.calc_artc {
-    height: calc(100% - 75px);
-}
-
-.artcl_height {
-    height: 100%;
-    background: white;
-    border-radius: 20px;
-}
-
-.size_img {
-    height: 100%;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-}
-
-.bot_page {
-    grid-area: footer;
-    background: #8B8B8B;
-    color: white;
-    padding: 20px;
-}
-
 .title_pol {
     font-family: Shrikhand, sans-serif, Droid Serif;
     display: flex;
     justify-content: center;
     background: white;
-}
-.footer_title{
-    font-family: Shrikhand, sans-serif, Droid Serif;
 }
 
 .sch_loc {
@@ -149,7 +93,24 @@ button {
     height: 50px;
 }
 
-.btn{
+.position_loc {
+    position: absolute;
+    left: 90px;
+}
+
+.city_ppl {
+    font-weight: 700;
+    background: #EAEAEA;
+    border: unset;
+    text-align: center;
+    width: 80%;
+}
+
+.pad_title {
+    padding: 45px 45px 0 45px;
+}
+
+.btn {
     margin-top: 25px;
     border: unset;
     background: #B461DB;
@@ -160,22 +121,81 @@ button {
     box-shadow: 0 5px 10px silver;
 }
 
-.pad_title{
-    padding: 45px 45px 0 45px;
+.how_work {
+    grid-area: working;
+    padding: 0 20px;
+    margin-top: 40px;
 }
-.title_work{
-    margin-bottom: 25px;
+
+.icon_position {
+    display: flex;
+    padding: 0 30px 0 30px;
+    color: gray;
 }
-.working_ul{
-    padding: 0 15px;
+
+.working_ul {
+    padding: 0 0 0 15px;
 }
-.fig_food{
+
+.list_food {
+    grid-area: restaurant;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px repeat(4, 250px);
+    grid-gap: 20px;
+    background: #F6F6F6;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.title_sec {
+    display: flex;
+    align-items: end;
+}
+
+.artcl_height {
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+}
+
+.calc_artc {
+    height: calc(100% - 75px);
+}
+
+
+.size_img {
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.fig_food {
     position: relative;
     padding: 10px;
 }
-.i_love{
+
+.i_love {
     position: absolute;
-    top: 25%;
-    left: 80%;
+    bottom: 20px;
+    right: 25px;
     font-size: 2rem;
+}
+
+.bot_page {
+    grid-area: footer;
+    background: #353535;
+    color: white;
+    padding: 20px;
+}
+
+.footer_title {
+    font-family: Shrikhand, sans-serif, Droid Serif;
+}
+
+.icon_footer {
+    font-size: 1rem;
+    height: 16px;
+    width: 20px;
+    margin-right: 5px;
 }
