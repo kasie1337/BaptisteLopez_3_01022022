@@ -53,13 +53,26 @@ button {
 .list_work {
     font-weight: 700;
     background: #F6F6F6;
-    height: 75px;
     display: flex;
     align-items: center;
     border-radius: 17px;
-    margin-top: 25px;
     box-shadow: 0 5px 10px silver;
+    position: relative;
 }
+li.list_work:nth-child(1)::before {
+    content: "1";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .body_style {
     display: grid;
@@ -89,7 +102,7 @@ button {
     align-items: center;
     position: relative;
     justify-content: center;
-    background: #EAEAEA;
+    background: linear-gradient(to bottom, grey 0%, silver 10%);
     height: 50px;
 }
 
@@ -113,12 +126,13 @@ button {
 .btn {
     margin-top: 25px;
     border: unset;
-    background: #B461DB;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     color: white;
     border-radius: 30px;
     height: 50px;
     padding: 0 20px 0 20px;
     box-shadow: 0 5px 10px silver;
+
 }
 
 .how_work {
@@ -128,13 +142,15 @@ button {
 }
 
 .icon_position {
-    display: flex;
-    padding: 0 30px 0 30px;
+    padding: 0 0 0 30px;
     color: gray;
+    width: 70px;
 }
 
 .working_ul {
-    padding: 0 0 0 15px;
+    display: grid;
+    grid-template-rows: repeat(3, 75px);
+    grid-gap: 15px;
 }
 
 .list_food {
@@ -153,31 +169,32 @@ button {
     align-items: end;
 }
 
-.artcl_height {
+.card {
     height: 100%;
     background: white;
     border-radius: 20px;
 }
 
-.calc_artc {
-    height: calc(100% - 75px);
+.cd_artcl {
+    height: 100%;
 }
 
 
 .size_img {
-    height: 100%;
+    height: calc(100% - 75px);
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
-.fig_food {
+.fig_card {
     position: relative;
     padding: 10px;
 }
 
 .i_love {
     position: absolute;
-    bottom: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 25px;
     font-size: 2rem;
 }

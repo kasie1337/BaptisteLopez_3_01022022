@@ -9,8 +9,10 @@
 <body>
 <header>
     <a href="index.html">
-    <i class="fas fa-arrow-left"></i>
-    <h1>ohmyfood</h1>
+        <i class="fas fa-arrow-left"></i>
+    </a>
+    <a href="index.html">
+        <h1>ohmyfood</h1>
     </a>
     <img src="images/a_la_francaise.jpg" alt="Une photo représentant une assiette qui contient un désert"/>
     <h2>À la française</h2>
@@ -20,13 +22,25 @@
     <section>
         <form>
 
-            <h2>ENTREES</h2>
             <fieldset>
+                <legend>ENTREES</legend>
 
                 <input type="checkbox" id="pulpe" name="check" value="valid">
                 <label for="pulpe">Tartare de poulpe acidulé</label>
                 <p>Aux zestes d'orange 25€</p>
 
+
+                <ul>
+                    <li>
+                        <label for="pulpe">
+                            <span>Couscous</span>
+                            <span>Aux lentilles</span>
+                            <span>89 Euros</span>
+                        </label>
+                        <span><i class="fas fa-check"></i></span>
+                        <input type="checkbox" id="pulpe" name="check" value="valid">
+                    </li>
+                </ul>
                 <input type="checkbox" id="vegetal" name="check" value="valid">
                 <label for="vegetal">Velouté de légumes d'antan</label>
                 <p>Carotte, panais, topinambour 35€</p>
