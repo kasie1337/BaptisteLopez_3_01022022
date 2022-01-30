@@ -1,229 +1,23 @@
-@font-face {
-  font-family: 'roboto';
-  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
-}
-
-@font-face {
-  font-family: 'Shrikhand';
-  src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-}
+@import "Base/root";
+@import "Layout/uppage";
+@import "Layout/workings";
+@import "Layout/restaurant";
+@import "Layout/footers";
+@import "Components/buttons";
+@import "Utils/variable";
 
 
-:root {
-  $primary-color: #F6F6F6;
-  $second-color: #FFFFFF;
-  $text-color: #000000;
-  $bot-color: #353535;
-  $icon-color: #9356DC;
-  font-size: 12px;
-}
-
-li {
-  font-size: 1.34rem;
-}
-
-label, input {
-  font-size: 1.34rem;
-}
-
-h1 {
-  font-size: 2.50rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.50rem;
-}
-
-p {
-  font-size: 1.41rem;
-}
-
-button {
-  font-size: 1.35rem;
-}
 
 
-.body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 400px) 1260px auto;
-  grid-template-areas: "header"
-                         "working"
-                         "restaurant"
-                         "footer";
 
 
-  font-family: roboto, sans-serif, Droid Serif;
 
-}
 
-.up_page {
-  grid-area: header;
-  text-align: center;
-  background: #F6F6F6;
 
-  .up_page-title {
-    font-family: Shrikhand, sans-serif, Droid Serif;
-    background: white;
 
-  }
 
-  .up_page-sd-title {
-    padding: 45px 45px 0 45px;
-  }
 
-  .up_page-box {
-    display: flex;
-    justify-content: center;
-  }
 
-  .up_page-search {
-    align-items: center;
-    position: relative;
-    background: linear-gradient(to bottom, grey 0%, silver 10%);
-    height: 50px;
-  }
 
-  .up_page-position {
-    position: absolute;
-    left: 90px;
-  }
 
-  .up_page-city {
-    font-weight: 700;
-    background: silver;
-    border: unset;
-    text-align: center;
-    width: 80%;
-  }
 
-  .up_page-btn {
-    margin-top: 25px;
-    border: unset;
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    color: white;
-    border-radius: 30px;
-    height: 50px;
-    padding: 0 20px 0 20px;
-    box-shadow: 0 5px 10px silver;
-  }
-
-}
-
-.how_work {
-  grid-area: working;
-  padding: 0 20px;
-  margin-top: 40px;
-  background: #FFFFFF;
-
-  .how_work-position {
-    padding: 0 0 0 30px;
-    color: gray;
-    width: 70px;
-  }
-
-  .how_work-ul {
-    display: grid;
-    grid-template-rows: repeat(3, 75px);
-    grid-gap: 15px;
-    background: #FFFFFF;
-  }
-
-  .how_work-box {
-    display: flex;
-    align-items: center;
-
-  }
-
-  .how_work-list {
-    font-weight: 700;
-    background: #F6F6F6;
-    border-radius: 15px;
-    box-shadow: 0 5px 10px silver;
-    position: relative;
-  }
-
-  li.how_work-list:nth-child(1)::before {
-    content: "1";
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    border-radius: 15px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #9356DC;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    font-size: 1rem;
-  }
-}
-
-.list_food {
-  grid-area: restaurant;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 70px repeat(4, 250px);
-  grid-gap: 20px;
-  background: #F6F6F6;
-  padding: 20px;
-  margin-top: 40px;
-
-  .list_food-title {
-    display: flex;
-    align-items: end;
-  }
-
-  .list_food-card {
-    height: 100%;
-    background: white;
-    border-radius: 20px;
-  }
-
-  .list_food-figure {
-    height: 100%;
-  }
-
-  .list_food-img {
-    height: calc(100% - 75px);
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-  }
-
-  .list_food-fig {
-    position: relative;
-    padding: 10px;
-  }
-
-  .list_food-love {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 25px;
-    font-size: 2rem;
-  }
-}
-
-.bot_page {
-  grid-area: footer;
-  background: #353535;
-  color: white;
-  padding: 20px;
-
-  .bot_page-title {
-    font-family: Shrikhand, sans-serif, Droid Serif;
-  }
-
-  .bot_page-icon {
-    font-size: 1rem;
-    height: 16px;
-    width: 20px;
-    margin-right: 5px;
-  }
-}
