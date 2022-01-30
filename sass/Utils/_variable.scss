@@ -25,3 +25,6 @@ li.how_work-list:nth-child(3)::before{
   @include numwork;
   content: "3";
 }
+li.how_work-list:hover{
+  background: #F5EDFF;
+}
