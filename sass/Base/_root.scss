@@ -8,6 +8,7 @@
   font-family: 'Shrikhand';
   src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 }
+
 :root {
   $primary-color: #F6F6F6;
   $second-color: #FFFFFF;
@@ -44,6 +45,7 @@ p {
 button {
   font-size: 1.35rem;
 }
+
 .body {
   display: grid;
   grid-template-columns: 1fr;
@@ -56,4 +58,14 @@ button {
 
   font-family: roboto, sans-serif, Droid Serif;
 
+}
+
+.body_menu-one {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 720px auto;
+  grid-template-areas: "header"
+                       "menu"
+                       "footer";
+  grid-gap: 80px;
 }
