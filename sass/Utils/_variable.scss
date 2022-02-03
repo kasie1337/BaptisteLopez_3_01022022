@@ -1,3 +1,11 @@
+body {
+  counter-reset: number;
+}
+
+ul > li {
+  counter-increment: number;
+}
+
 @mixin numwork {
   position: absolute;
   height: 25px;
@@ -13,18 +21,36 @@
   align-items: center;
 }
 
-li.how_work-list:nth-child(1)::before{
+
+li.how_work-list:before{
   @include numwork;
-  content: "1";
+  content: counter(number);
 }
-li.how_work-list:nth-child(2)::before{
-  @include numwork;
-  content: "2";
-}
-li.how_work-list:nth-child(3)::before{
-  @include numwork;
-  content: "3";
-}
+
+
 li.how_work-list:hover{
   background: #F5EDFF;
+}
+@mixin gridmenu{
+  display: grid;
+  grid-template-rows: auto repeat(3, 80px);
+  border: none;
+  margin: 0;
+  padding: 0;
+  grid-gap: 10px;
+}
+ul{
+  margin: 0;
+}
+.menu_list-enter{
+  grid-area: enter;
+  @include gridmenu;
+}
+.menu_list-flat{
+  grid-area: flat;
+  @include gridmenu
+}
+.menu_list-desserts{
+  grid-area: desserts;
+  @include gridmenu
 }

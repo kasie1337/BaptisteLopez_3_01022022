@@ -1,3 +1,122 @@
+
+
+.body_menu-one {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px 1100px 200px;
+  grid-template-areas: "header"
+                       "menu"
+
+                       "footer";
+  font-family: roboto, sans-serif, "Arial Black";
+}
+
+.up_page{
+  position: relative;
+  grid-area: header;
+
+}
+.up_page-title{
+  position: unset;
+}
+.up_page-icon{
+  position: absolute;
+  top: 15px;
+  padding: 0 25px;
+  left: 0;
+  font-size: 1.50rem;
+}
+.hdmenu_rest{
+  font-family: Shrikhand, sans-serif, Droid Serif;
+  text-align: left;
+  padding: 0 20px;
+  font-size: 2.30rem;
+}
+.up_page-love{
+  position: absolute;
+  bottom: 25px;
+  font-size: 1.90rem;
+  right: 40px;
+}
+
 .menu_list{
-  grid-area: menu;
+  background: #f7f7f7;
+}
+.menu_list-leg{
+  height: 35px;
+  display: flex;
+  align-items: end;
+  margin-bottom: 10px;
+
+}
+.menu_list-size{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 290px) 100px;
+  grid-gap: 30px;
+  grid-template-areas: "enter"
+                       "flat"
+                       "desserts"
+                       "send";
+  padding: 0 15px;
+}
+
+.menu_list-send{
+  grid-area: send;
+  display: flex;
+  justify-content: center;
+}
+.up_page-btn-menu{
+  width: 190px;
+}
+.menu_list-choise{
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px silver;
+  height: 70px;
+}
+.bot_page{
+  grid-area: footer;
+}
+
+
+.menu_list-choise{
+  display: flex;
+  position: relative;
+  padding: 10px;
+
+}
+.menu_list-styletxt{
+  border-bottom: 3px solid green;
+}
+.menu_list-styletrans{
+  border-bottom: 3px solid transparent;
+}
+.menu_list-info{
+  width: 90%;
+position: relative;
+}
+.menu_list-food{
+  font-size: 1.50rem;
+  font-weight: 700;
+}
+.menu_list-p{
+  display: block;
+  font-size: 1.20rem;
+}
+
+.menu_list-radio{
+  display: none;
+}
+.menu_list-price{
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  font-weight: 700;
+}
+.menu_list-valid{
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
