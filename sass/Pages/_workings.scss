@@ -4,6 +4,10 @@
   margin-top: 40px;
   background: #FFFFFF;
 
+  .how_work-title{
+    margin-bottom: 25px;
+  }
+
   .how_work-position {
     padding: 0 0 0 30px;
     color: gray;
@@ -15,6 +19,12 @@
     grid-template-rows: repeat(3, 75px);
     grid-gap: 15px;
     background: #FFFFFF;
+    .how_work-color{
+      background: #F5EDFF;
+    }
+    .how_work-i{
+      color: #9356DC
+    }
   }
 
   .how_work-box {

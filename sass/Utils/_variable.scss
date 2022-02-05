@@ -31,6 +31,7 @@ li.how_work-list:before{
 li.how_work-list:hover{
   background: #F5EDFF;
 }
+
 @mixin gridmenu{
   display: grid;
   grid-template-rows: auto repeat(3, 80px);
@@ -53,4 +54,22 @@ ul{
 .menu_list-desserts{
   grid-area: desserts;
   @include gridmenu
+}
+@mixin news {
+  position: absolute;
+  background: #99E2D0;
+  right: 10px;
+  top: 10px;
+  width: 80px;
+  color: #008766;
+  font-size: 1.15rem;
+  height: 30px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px black;
+}
+.list_food-new{
+  @include news;
 }

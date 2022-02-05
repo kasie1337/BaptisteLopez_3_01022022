@@ -21,7 +21,7 @@
   .up_page-search {
     align-items: center;
     position: relative;
-    background: linear-gradient(to bottom, grey 0%, silver 10%);
+    background: linear-gradient(to bottom, silver 0%, #EAEAEA 10%);
     height: 50px;
   }
 
@@ -32,14 +32,12 @@
 
   .up_page-city {
     font-weight: 700;
-    background: silver;
+    background: #EAEAEA;
     border: unset;
     text-align: center;
     width: 80%;
   }
 }
-
-
 
 
 .hdmenu_up-page{
