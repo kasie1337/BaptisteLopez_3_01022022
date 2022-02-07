@@ -34,11 +34,9 @@ li.how_work-list:hover{
 
 @mixin gridmenu{
   display: grid;
-  grid-template-rows: auto repeat(3, 80px);
   border: none;
   margin: 0;
   padding: 0;
-  grid-gap: 10px;
 }
 ul{
   margin: 0;

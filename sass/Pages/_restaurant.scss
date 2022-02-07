@@ -24,12 +24,15 @@
   .list_food-figure {
     height: 100%;
   }
-  .list_food-new{
+
+  .list_food-figure::before{
+    content: "Nouveau";
     position: absolute;
     background: #99E2D0;
     right: 10px;
     top: 10px;
-    width: 80px;
+    min-width: 80px;
+    padding: 0 10px;
     color: #008766;
     font-size: 1.15rem;
     height: 30px;

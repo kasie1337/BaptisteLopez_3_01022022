@@ -49,7 +49,10 @@
 .menu_list {
   background: #f7f7f7;
 
-
+.menu_list-gap{
+  display: grid;
+  grid-gap: 15px;
+}
 .menu_list-leg {
   height: 35px;
   display: flex;
@@ -61,13 +64,12 @@
 .menu_list-size {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 290px) 100px;
   grid-gap: 30px;
   grid-template-areas: "enter"
                        "flat"
                        "desserts"
                        "send";
-  padding: 0 15px;
+  padding: 0 15px 0 10px;
 }
 
 .menu_list-send {
@@ -80,10 +82,10 @@
   background: white;
   border-radius: 15px;
   box-shadow: 0 5px 5px silver;
-  height: 70px;
+  height: 65px;
   display: flex;
   position: relative;
-  padding: 10px;
+
 }
 
 .menu_list-styletxt {
@@ -97,6 +99,7 @@
 .menu_list-info {
   width: 90%;
   position: relative;
+  padding: 10px;
 }
 
 .menu_list-food {
@@ -115,18 +118,27 @@
 
 .menu_list-price {
   position: absolute;
-  right: -25px;
-  bottom: 0;
+  right: 15px;
+  bottom: 10px;
   font-weight: 700;
 }
 
 .menu_list-valid {
-  width: 30%;
+  width: 20%;
   justify-content: center;
   align-items: center;
-  display: none;
-}
+  display: flex;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  color: #99E2D0;
+  font-size: 1rem;
 
+}
+.fa-check:before{
+  padding: 5px;
+  background-color: white;
+  border-radius: 20px;
+}
 }
 
 .up_page-btn-menu {
