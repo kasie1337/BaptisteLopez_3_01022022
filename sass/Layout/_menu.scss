@@ -85,9 +85,25 @@
   height: 65px;
   display: flex;
   position: relative;
-
+animation-name: firstanim;
 }
+  @keyframes firstanim {
+    from{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
+    to{opacity: 1;}
+  }
 
+  .menu_list-animone{
+    animation: firstanim 1s linear 1s forwards;
+  }
+  .menu_list-animtwo{
+    animation: firstanim 2s linear 1s forwards;
+  }
+.menu_list-animthree{
+  animation: firstanim 3s linear 1s forwards;
+}
 .menu_list-styletxt {
   border-bottom: 3px solid #99E2D0;
 }
