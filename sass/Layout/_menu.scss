@@ -17,21 +17,23 @@
   position: unset;
 }
 
-.up_page-icon {
-  position: absolute;
-  top: 15px;
-  padding: 0 25px;
-  left: 0;
-  font-size: 1.50rem;
-}
-.up_page-love {
-  position: absolute;
-  bottom: 40px;
-  font-size: 1.90rem;
-  right: 40px;
+  .up_page-icon {
+    position: absolute;
+    top: 15px;
+    padding: 0 25px;
+    left: 0;
+    font-size: 1.50rem;
+  }
+
+  .up_page-love {
+    position: absolute;
+    bottom: 40px;
+    font-size: 1.90rem;
+    right: 40px;
+  }
 }
 
-}
+
 .hdmenu_rest {
   font-family: Shrikhand, sans-serif, Droid Serif;
   position: absolute;
