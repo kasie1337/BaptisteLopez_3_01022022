@@ -33,6 +33,34 @@
   }
 }
 
+.up_page-love-solid {
+  position: absolute;
+  bottom: 40px;
+  font-size: 1.90rem;
+  right: 40px;
+  opacity: 0;
+}
+
+.up_page-love-solid:hover {
+  opacity: 1;
+  animation: loveanim 800ms ease-in-out;
+
+}
+
+@keyframes loveanim {
+  from {
+    transform: scale(0);
+    transform-origin: center center;
+  }
+  25% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+}
 
 .hdmenu_rest {
   font-family: Shrikhand, sans-serif, Droid Serif;
@@ -114,12 +142,9 @@
 
   @keyframes check {
     from {
-      transform: translate(50%);
       width: 0;
     }
-
     to {
-      transform: translate(0);
       width: 20%;
     }
 
