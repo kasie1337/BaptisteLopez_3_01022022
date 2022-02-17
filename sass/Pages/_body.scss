@@ -1,4 +1,22 @@
-@media (max-width: 1000px) {
+@media (min-width: 1024px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 400px) 700px auto;
+    grid-template-areas: "header header"
+                         "working working"
+                         "restaurant restaurant"
+                         "footer footer";
+
+
+    font-family: roboto, sans-serif, Droid Serif;
+  }
+
+
+}
+
+
+@media (max-width: 1024px) {
   .body {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,7 +31,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .body {
     display: grid;
     grid-template-columns: 1fr;
