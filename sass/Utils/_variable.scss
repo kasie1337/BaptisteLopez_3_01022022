@@ -45,11 +45,80 @@ ul{
   grid-area: enter;
   @include gridmenu;
 }
-.menu_list-flat{
+
+.menu_list-flat {
   grid-area: flat;
   @include gridmenu
 }
-.menu_list-desserts{
+
+.menu_list-desserts {
   grid-area: desserts;
   @include gridmenu
+}
+
+@mixin how_work {
+  .how_work {
+    grid-area: working;
+    margin-top: 40px;
+    background: #FFFFFF;
+
+    .how_work-title {
+      margin-bottom: 25px;
+    }
+
+    .how_work-position {
+      padding: 0 0 0 30px;
+      color: gray;
+      width: 70px;
+    }
+
+    .how_work-ul {
+      display: grid;
+      grid-template-rows: repeat(3, 75px);
+      grid-gap: 15px;
+      background: #FFFFFF;
+
+      .how_work-color {
+        background: #F5EDFF;
+      }
+
+      .how_work-i {
+        color: #9356DC
+      }
+    }
+
+    .how_work-box {
+      display: flex;
+      align-items: center;
+
+    }
+
+    .how_work-list {
+      font-weight: 700;
+      background: #F6F6F6;
+      border-radius: 15px;
+      box-shadow: 0 5px 10px silver;
+      position: relative;
+    }
+
+  }
+}
+
+@media(max-width: 1000px) {
+  @include how_work;
+  .how_work {
+    padding: 0 200px;
+
+    .how_work-title {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  @include how_work;
+  .how_work {
+    padding: 0 20px;
+  }
 }

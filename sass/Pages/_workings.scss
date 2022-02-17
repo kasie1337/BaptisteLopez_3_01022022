@@ -1,44 +1,20 @@
-.how_work {
-  grid-area: working;
-  padding: 0 20px;
-  margin-top: 40px;
-  background: #FFFFFF;
-
-  .how_work-title{
-    margin-bottom: 25px;
-  }
-
-  .how_work-position {
-    padding: 0 0 0 30px;
-    color: gray;
-    width: 70px;
-  }
-
+@media (max-width: 1000px) {
   .how_work-ul {
     display: grid;
     grid-template-rows: repeat(3, 75px);
     grid-gap: 15px;
     background: #FFFFFF;
-    .how_work-color{
+
+    .how_work-color {
       background: #F5EDFF;
     }
-    .how_work-i{
+
+    .how_work-i {
       color: #9356DC
     }
   }
-
-  .how_work-box {
-    display: flex;
-    align-items: center;
-
-  }
-
-  .how_work-list {
-    font-weight: 700;
-    background: #F6F6F6;
-    border-radius: 15px;
-    box-shadow: 0 5px 10px silver;
-    position: relative;
-  }
-
 }
+
+
+
+
