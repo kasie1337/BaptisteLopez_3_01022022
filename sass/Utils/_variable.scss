@@ -79,9 +79,7 @@ ul{
       width: 70px;
     }
 
-    .how_work-color {
-      background: #F5EDFF;
-    }
+
 
       .how_work-i {
         color: #9356DC
@@ -100,8 +98,12 @@ ul{
       border-radius: 15px;
       box-shadow: 0 5px 10px silver;
       position: relative;
+
     }
 
+    .how_work-color {
+      background: #F5EDFF;
+    }
   }
 }
 
@@ -109,11 +111,19 @@ ul{
 @media(min-width: 1024px) {
   @include how_work;
   .how_work {
-    padding: 0 200px;
+    padding: 0 45px;
+    display: grid;
+    margin-top: 0;
 
     .how_work-title {
       display: flex;
       justify-content: center;
+      align-items: flex-end;
+    }
+
+    .how_work-ul {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 75px;
     }
   }
 }
@@ -121,11 +131,14 @@ ul{
 @media(max-width: 1024px) {
   @include how_work;
   .how_work {
-    padding: 0 200px;
+    padding: 0 45px;
+    display: grid;
+    margin-top: 0;
 
     .how_work-title {
       display: flex;
       justify-content: center;
+      align-items: flex-end;
     }
 
     .how_work-ul {
@@ -139,6 +152,12 @@ ul{
   @include how_work;
   .how_work {
     padding: 0 20px;
+
+    .how_work-title {
+      display: grid;
+      justify-content: left;
+    }
+  ;
 
     .how_work-ul {
       grid-template-columns: 1fr;
@@ -223,10 +242,12 @@ ul{
     grid-area: restaurant;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px repeat(3, 250px);
+    grid-template-rows: 70px 70px repeat(2, 250px) 70px;
     grid-template-areas: "title title"
-                         "item_a item_b"
-                         "item_c item_d";
+                         "item_a item_c"
+                         "item_a item_c"
+                         "item_b item_d"
+                         "item_b item_d";
     grid-gap: 20px;
     background: #F6F6F6;
     padding: 20px;

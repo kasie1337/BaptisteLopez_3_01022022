@@ -9,39 +9,58 @@
   src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 }
 
-:root {
-
-  font-size: 12px;
-}
-
 li {
-  font-size: 1.34rem;
+  font-size: 1.60rem;
 }
 
 label, input {
-  font-size: 1.34rem;
+  font-size: 1.55rem;
 }
 
 h1 {
-  font-size: 2.50rem;
+  font-size: 2.95rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.40rem;
 }
 
 h3 {
-  font-size: 1.50rem;
+  font-size: 1.80rem;
 }
 
 p {
-  font-size: 1.45rem;
+  font-size: 1.75rem;
+}
+
+ul {
+  font-size: 1.50rem;
 }
 
 button {
-  font-size: 1.35rem;
+  font-size: 1.65rem;
 }
 
-legend{
-  font-size: 1.25rem;
+legend {
+  font-size: 1.45rem;
 }
+
+@media(min-width: 1024px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 1024px) {
+  :root {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 10px;
+  }
+
+}
+
