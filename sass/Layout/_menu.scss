@@ -305,7 +305,7 @@
 
 .loader_spinner div {
   transform-origin: 40px 40px;
-  animation: lds-spinner 1.2s linear infinite;
+  animation: loader-spinner 1.2s linear infinite;
 }
 
 .loader_spinner div:after {
@@ -381,7 +381,7 @@
   animation-delay: 0s;
 }
 
-@keyframes lds-spinner {
+@keyframes loader-spinner {
   0% {
     opacity: 1;
   }
