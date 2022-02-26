@@ -12,11 +12,9 @@
     font-family: roboto, sans-serif, Droid Serif;
   }
 
-
 }
 
-
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .body {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -31,7 +29,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .body {
     display: grid;
     grid-template-columns: 1fr;
@@ -46,9 +44,6 @@
   }
 }
 
-.body_menu-one {
-
-}
 
 .lds-dual-ring {
   display: inline-block;
