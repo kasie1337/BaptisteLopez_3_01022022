@@ -314,11 +314,10 @@ legend {
     grid-area: header;
   }
   .up_page img {
-    object-fit: cover;
-    max-width: 100%;
-    display: block;
-    width: 100%;
-    height: 80%;
+      object-fit: cover;
+      max-width: 100%;
+      display: block;
+      height: 240px;
   }
   .up_page .up_page-title {
     position: unset;
@@ -512,7 +511,6 @@ legend {
     object-fit: cover;
     max-height: 100%;
     display: block;
-    width: 100%;
     height: 240px;
   }
 
@@ -539,11 +537,10 @@ legend {
     grid-area: header;
   }
   .up_page img {
-    object-fit: cover;
-    max-width: 100%;
-    display: block;
-    width: 100%;
-    height: 80%;
+      object-fit: cover;
+      max-width: 100%;
+      display: block;
+      height: 240px;
   }
   .up_page .up_page-title {
     position: unset;
@@ -737,7 +734,6 @@ legend {
     object-fit: cover;
     max-height: 100%;
     display: block;
-    width: 100%;
     height: 240px;
   }
 
@@ -760,11 +756,10 @@ legend {
     grid-area: header;
   }
   .up_page img {
-    object-fit: cover;
-    max-width: 100%;
-    display: block;
-    width: 100%;
-    height: 80%;
+      object-fit: cover;
+      max-width: 100%;
+      display: block;
+      height: 240px;
   }
   .up_page .up_page-title {
     position: unset;
