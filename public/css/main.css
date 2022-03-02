@@ -284,7 +284,6 @@ legend {
     grid-template-rows: repeat(2, 400px) 900px auto;
     grid-template-areas: "header header" "working working" "restaurant restaurant" "footer footer";
     font-family: roboto, sans-serif, Droid Serif;
-    position: relative;
   }
 }
 @media (min-width: 768px) {
@@ -859,21 +858,25 @@ li.how_work-list:hover {
 }
 
 .up_page-btn {
-    margin-top: 25px;
-    border: unset;
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    color: white;
-    border-radius: 30px;
-    height: 50px;
-    padding: 0 20px 0 20px;
-    box-shadow: 0 5px 10px silver;
-    font-family: roboto, sans-serif, "Arial Black";
-    z-index: 8888;
+  margin-top: 25px;
+  border: unset;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border-radius: 30px;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  box-shadow: 0 5px 10px silver;
+  font-family: roboto, sans-serif, "Arial Black";
+  z-index: 8888;
 }
 
 .up_page-btn:hover {
   background: #FF79DA;
   box-shadow: 0 10px 10px silver;
+}
+
+.up_page-btn-menu {
+  width: 190px;
 }
 
 /*# sourceMappingURL=main.css.map */
