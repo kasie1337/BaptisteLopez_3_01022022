@@ -21,7 +21,10 @@ ul > li {
   align-items: center;
 }
 
-
+@mixin btn-hover {
+  background: #FF79DA;
+  box-shadow: 0 10px 10px silver;
+}
 
 
 @mixin gridmenu{

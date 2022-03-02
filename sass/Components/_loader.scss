@@ -1,11 +1,11 @@
 .loader_position {
-  position: absolute;
+  position: fixed;
   background: white;
   width: 100vw;
   height: 100vh;
   opacity: 0;
   z-index: 0;
-  animation: loader-opacity 3s cubic-bezier(1, 0, .88, .22);
+  animation: loader-opacity 3s cubic-bezier(1, 0, 1, 0.01);
 }
 
 @keyframes loader-opacity {
@@ -23,7 +23,7 @@
 
 .loader_style {
   height: 20px;
-  width: 90px;
+  width: 50px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -44,7 +44,7 @@
 }
 
 .loader_style:nth-child(2) {
-  transform: rotate(120deg) translate(-50%, -50%);
+  transform: rotate(110deg) translate(-50%, -50%);
   animation-delay: 0.2s;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }

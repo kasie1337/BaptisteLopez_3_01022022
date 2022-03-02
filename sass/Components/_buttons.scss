@@ -7,5 +7,13 @@
   height: 50px;
   padding: 0 20px 0 20px;
   box-shadow: 0 5px 10px silver;
-  font-family: roboto, sans-serif,"Arial Black";
+  font-family: roboto, sans-serif, "Arial Black";
+}
+
+.up_page-btn:hover {
+  @include btn-hover;
+}
+
+.up_page-btn-menu:hover {
+  @include btn-hover;
 }
