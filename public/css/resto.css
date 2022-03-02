@@ -54,7 +54,6 @@ ul {
         z-index: 0;
     }
 }
-
 .loader_style {
     height: 20px;
     width: 50px;
@@ -154,7 +153,6 @@ ul {
         opacity: 0;
     }
 }
-
 /* Box sizing rules */
 *,
 *::before,
@@ -225,12 +223,10 @@ select {
     font-family: "roboto";
     src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 }
-
 @font-face {
     font-family: "Shrikhand";
     src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 }
-
 li {
     font-size: 1.6rem;
 }
@@ -332,7 +328,7 @@ legend {
         background: radial-gradient(#FF79DA, #9356DC);
         -webkit-background-clip: text;
         color: transparent;
-        transition: transform 1s;
+        transition: transform 500ms;
     }
 
     .up_page .up_page-love:hover ~ .up_page-love-solid, .up_page .up_page-love-solid:hover {
@@ -588,7 +584,7 @@ legend {
         background: radial-gradient(#FF79DA, #9356DC);
         -webkit-background-clip: text;
         color: transparent;
-        transition: transform 1s;
+        transition: transform 500ms;
     }
 
     .up_page .up_page-love:hover ~ .up_page-love-solid, .up_page .up_page-love-solid:hover {
@@ -840,7 +836,7 @@ legend {
         background: radial-gradient(#FF79DA, #9356DC);
         -webkit-background-clip: text;
         color: transparent;
-        transition: transform 1s;
+        transition: transform 500ms;
     }
 
     .up_page .up_page-love:hover ~ .up_page-love-solid, .up_page .up_page-love-solid:hover {
@@ -1032,41 +1028,34 @@ legend {
         width: 190px;
     }
 }
-
 .up_page {
     grid-area: header;
     text-align: center;
     background: #F6F6F6;
     position: relative;
 }
-
 .up_page .up_page-title {
     font-family: Shrikhand, sans-serif, Droid Serif;
     background: white;
 }
-
 .up_page .up_page-sd-title {
     padding: 45px 45px 0 45px;
 }
-
 .up_page .up_page-box {
     display: flex;
     justify-content: center;
 }
-
 .up_page .up_page-search {
     align-items: center;
     position: relative;
     background: linear-gradient(to bottom, silver 0%, #EAEAEA 10%);
     height: 50px;
 }
-
 .up_page .up_page-position {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .up_page .up_page-city {
     font-weight: 700;
     background: #EAEAEA;
@@ -1081,11 +1070,9 @@ legend {
     color: white;
     padding: 20px;
 }
-
 .bot_page .bot_page-title {
     font-family: Shrikhand, sans-serif, Droid Serif;
 }
-
 .bot_page .bot_page-icon {
     font-size: 1rem;
     height: 16px;

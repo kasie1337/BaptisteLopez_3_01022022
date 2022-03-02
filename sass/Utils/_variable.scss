@@ -224,7 +224,7 @@ ul{
       background: radial-gradient(#FF79DA, #9356DC);
       -webkit-background-clip: text;
       color: transparent;
-      transition: transform 1s;
+      transition: transform 500ms;
     }
 
     .up_page-love:hover ~ .up_page-love-solid, .up_page-love-solid:hover {
