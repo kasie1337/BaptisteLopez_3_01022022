@@ -107,21 +107,44 @@
   25% {
     opacity: 0;
   }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
+.up_page-btn {
+    margin-top: 25px;
+    border: unset;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+    padding: 0 20px 0 20px;
+    box-shadow: 0 5px 10px silver;
+    font-family: roboto, sans-serif, "Arial Black";
+    z-index: 8888;
+}
+
+.up_page-btn:hover {
+    background: linear-gradient(to bottom right, rgba(255, 121, 218, 0.85), rgba(147, 86, 220, 0.85));
+    box-shadow: 0 5px 15px silver;
+}
+
+.up_page-btn-menu {
+    width: 190px;
+}
+
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -495,28 +518,6 @@ legend {
   height: 16px;
   width: 20px;
   margin-right: 5px;
-}
-
-.up_page-btn {
-  margin-top: 25px;
-  border: unset;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  color: white;
-  border-radius: 30px;
-  height: 50px;
-  padding: 0 20px 0 20px;
-  box-shadow: 0 5px 10px silver;
-  font-family: roboto, sans-serif, "Arial Black";
-  z-index: 8888;
-}
-
-.up_page-btn:hover {
-  background: linear-gradient(to bottom right, rgba(255, 121, 218, 0.85), rgba(147, 86, 220, 0.85));
-  box-shadow: 0 5px 15px silver;
-}
-
-.up_page-btn-menu {
-  width: 190px;
 }
 
 /*# sourceMappingURL=main.css.map */
