@@ -183,7 +183,16 @@
     display: none;
   }
 
+  .menu_list-p:hover {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+  }
 }
+
+
+
 
 
 

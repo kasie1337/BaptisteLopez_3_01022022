@@ -133,7 +133,7 @@
     padding: 0 20px 0 20px;
     box-shadow: 0 5px 10px silver;
     font-family: roboto, sans-serif, "Arial Black";
-    z-index: 8888;
+    z-index: 1;
 }
 
 .up_page-btn:hover {
@@ -215,12 +215,10 @@ select {
     font-family: "roboto";
     src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 }
-
 @font-face {
     font-family: "Shrikhand";
     src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 }
-
 :root {
     font-size: 10px;
 }
@@ -442,7 +440,7 @@ legend {
     .list_food {
         grid-template-rows: 70px 70px repeat(2, 250px) 70px;
         grid-template-areas: "title title" "item_a item_c" "item_a item_c" "item_b item_d" "item_b item_d";
-  }
+    }
 }
 .list_food .list_food-title {
   display: flex;
