@@ -19,17 +19,17 @@
     }
 }
 .menu_list-animone {
-    animation: firstanim 900ms ease-out forwards;
-    animation-delay: 2300ms;
+    animation: firstanim 1100ms ease-out forwards;
+    animation-delay: 2200ms;
 }
 
 .menu_list-animtwo {
-    animation: firstanim 1200ms ease-out forwards;
-    animation-delay: 2500ms;
+    animation: firstanim 1100ms ease-out forwards;
+    animation-delay: 2400ms;
 }
 
 .menu_list-animthree {
-    animation: firstanim 1500ms ease-out forwards;
+    animation: firstanim 1100ms ease-out forwards;
     animation-delay: 2600ms;
 }
 
@@ -76,7 +76,7 @@
     height: 100vh;
     opacity: 0;
     z-index: 0;
-    animation: loader-opacity 2700ms cubic-bezier(1, 0.03, 1, 0.31);
+    animation: loader-opacity 2600ms cubic-bezier(1, 0.03, 1, 0.31);
 }
 
 @keyframes loader-opacity {
@@ -318,9 +318,9 @@ legend {
 }
 
 @media (min-width: 1024px) {
-  :root {
-    font-size: 12px;
-  }
+    :root {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -334,41 +334,34 @@ legend {
         font-size: 10px;
     }
 }
-
 .up_page {
     grid-area: header;
     text-align: center;
     background: #F6F6F6;
     position: relative;
 }
-
 .up_page .up_page-title {
     font-family: Shrikhand, sans-serif, Droid Serif;
     background: white;
 }
-
 .up_page .up_page-sd-title {
     padding: 45px 45px 0 45px;
 }
-
 .up_page .up_page-box {
     display: flex;
     justify-content: center;
 }
-
 .up_page .up_page-search {
     align-items: center;
     position: relative;
     background: linear-gradient(to bottom, silver 0%, #EAEAEA 10%);
     height: 50px;
 }
-
 .up_page .up_page-position {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .up_page .up_page-city {
     font-weight: 700;
     background: #EAEAEA;
@@ -495,14 +488,14 @@ legend {
   margin-bottom: 50px;
 }
 .menu_list .menu_list-choise {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 5px 5px silver;
-  height: 65px;
-  display: flex;
-  position: relative;
-  opacity: 0;
-  transform: translateY(100px);
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px silver;
+    height: 65px;
+    display: flex;
+    position: relative;
+    opacity: 0;
+    transform: translateY(90px);
 }
 @media (min-width: 1024px) {
   .menu_list .menu_list-choise {

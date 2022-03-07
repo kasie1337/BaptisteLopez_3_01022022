@@ -8,7 +8,7 @@
   height: 100vh;
   opacity: 0;
   z-index: 0;
-  animation: loader-opacity 2700ms cubic-bezier(1, 0.03, 1, 0.31);
+  animation: loader-opacity 2600ms cubic-bezier(1, 0.03, 1, 0.31);
 }
 
 @keyframes loader-opacity {

@@ -23,23 +23,24 @@
 }
 
 .menu_list-animone {
-  animation: firstanim 900ms ease-out forwards;
-  animation-delay: 2300ms;
+  animation: firstanim 1100ms ease-out forwards;
+  animation-delay: 2200ms;
 }
 
 .menu_list-animtwo {
-  animation: firstanim 1200ms ease-out forwards;
-  animation-delay: 2500ms;
+  animation: firstanim 1100ms ease-out forwards;
+  animation-delay: 2400ms;
 }
 
 .menu_list-animthree {
-  animation: firstanim 1500ms ease-out forwards;
+  animation: firstanim 1100ms ease-out forwards;
   animation-delay: 2600ms;
 }
 
 @keyframes firstanim {
   0% {
     opacity: 0;
+
   }
 
   100% {
