@@ -1,14 +1,14 @@
 .loader_position {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  z-index: 0;
-  animation: loader-opacity 3s cubic-bezier(1, 0, 1, 0.01);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    z-index: 0;
+    animation: loader-opacity 2700ms cubic-bezier(1, 0.03, 1, 0.31);
 }
 
 @keyframes loader-opacity {
