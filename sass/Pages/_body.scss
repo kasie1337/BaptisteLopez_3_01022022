@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 400px) 1260px auto;
-  grid-template-areas: "header"
+  grid-template-areas:   "header"
                          "working"
                          "restaurant"
                          "footer";
