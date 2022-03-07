@@ -13,10 +13,10 @@
   padding: 20px;
   margin-top: 40px;
 
-  @media (min-width: 500px) {
+  @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px repeat(3, 250px);
-    grid-template-areas: "title title"
+    grid-template-rows: 70px repeat(2, 250px);
+    grid-template-areas:   "title title"
                            "item_a item_b"
                            "item_c item_d";
 

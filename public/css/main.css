@@ -8,17 +8,23 @@
     height: 100vh;
     opacity: 0;
     z-index: 0;
-    animation: loader-opacity 2600ms cubic-bezier(1, 0.03, 1, 0.31);
+    animation: loader-opacity 2400ms cubic-bezier(1, 0.03, 1, 0.31);
 }
 
 @keyframes loader-opacity {
-  0% {
-    opacity: 1;
-    z-index: 9999;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 1;
+        z-index: 9999;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 .loader_style {
   height: 20px;
@@ -206,19 +212,37 @@ select {
 }
 
 @font-face {
-  font-family: "roboto";
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+    font-family: "roboto";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 }
+
 @font-face {
-  font-family: "Shrikhand";
-  src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+    font-family: "Shrikhand";
+    src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 }
+
+:root {
+    font-size: 10px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
 li {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 label, input {
-  font-size: 1.55rem;
+    font-size: 1.55rem;
 }
 
 h1 {
@@ -249,21 +273,6 @@ legend {
   font-size: 1.45rem;
 }
 
-@media (min-width: 1024px) {
-  :root {
-    font-size: 12px;
-  }
-}
-@media (max-width: 1024px) {
-  :root {
-    font-size: 11px;
-  }
-}
-@media (max-width: 768px) {
-  :root {
-    font-size: 10px;
-  }
-}
 .body {
   display: grid;
   grid-template-columns: 1fr;
@@ -275,17 +284,19 @@ legend {
 .body ul > li {
   counter-increment: number;
 }
-@media (min-width: 500px) {
-  .body {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 400px) 700px auto;
-    grid-template-areas: "header header" "working working" "restaurant restaurant" "footer footer";
-  }
+
+@media (min-width: 768px) {
+    .body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 400px) 700px auto;
+        grid-template-areas: "header header" "working working" "restaurant restaurant" "footer footer";
+    }
 }
+
 @media (min-width: 1024px) {
-  .body {
-    grid-template-rows: repeat(2, 400px) auto auto;
-  }
+    .body {
+        grid-template-rows: repeat(2, 400px) auto auto;
+    }
 }
 
 .up_page {
@@ -330,24 +341,26 @@ legend {
   background: #FFFFFF;
   padding: 0 20px;
 }
-@media (min-width: 500px) {
-  .how_work {
-    padding: 0 30px;
-    display: grid;
-    margin-top: 0;
-  }
+
+@media (min-width: 768px) {
+    .how_work {
+        padding: 0 30px;
+        display: grid;
+        margin-top: 0;
+    }
 }
 .how_work .how_work-title {
   margin-bottom: 25px;
   display: grid;
   justify-content: left;
 }
-@media (min-width: 500px) {
-  .how_work .how_work-title {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
+
+@media (min-width: 768px) {
+    .how_work .how_work-title {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
 }
 .how_work .how_work-ul {
   display: grid;
@@ -356,12 +369,13 @@ legend {
   grid-gap: 15px;
   background: #FFFFFF;
 }
-@media (min-width: 500px) {
-  .how_work .how_work-ul {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 75px;
-    grid-gap: 25px;
-  }
+
+@media (min-width: 768px) {
+    .how_work .how_work-ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 75px;
+        grid-gap: 25px;
+    }
 }
 .how_work .how_work-position {
   padding: 0 0 0 30px;
@@ -415,17 +429,19 @@ legend {
   padding: 20px;
   margin-top: 40px;
 }
-@media (min-width: 500px) {
-  .list_food {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px repeat(3, 250px);
-    grid-template-areas: "title title" "item_a item_b" "item_c item_d";
-  }
+
+@media (min-width: 768px) {
+    .list_food {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px repeat(2, 250px);
+        grid-template-areas: "title title" "item_a item_b" "item_c item_d";
+    }
 }
+
 @media (min-width: 1024px) {
-  .list_food {
-    grid-template-rows: 70px 70px repeat(2, 250px) 70px;
-    grid-template-areas: "title title" "item_a item_c" "item_a item_c" "item_b item_d" "item_b item_d";
+    .list_food {
+        grid-template-rows: 70px 70px repeat(2, 250px) 70px;
+        grid-template-areas: "title title" "item_a item_c" "item_a item_c" "item_b item_d" "item_b item_d";
   }
 }
 .list_food .list_food-title {
