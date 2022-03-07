@@ -1,5 +1,8 @@
 .loader_position {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
   width: 100vw;
   height: 100vh;
@@ -23,9 +26,7 @@
 .loader_style {
   height: 20px;
   width: 50px;
-  top: 50%;
   position: absolute;
-  left: 50%;
   animation: loader 1000ms cubic-bezier(.73, .42, .01, 1);
   border-radius: 40px;
 }

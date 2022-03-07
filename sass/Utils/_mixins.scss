@@ -1,0 +1,30 @@
+@mixin numwork {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #9356DC;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 1rem;
+  align-items: center;
+}
+
+@mixin btn-hover {
+  background: linear-gradient(to bottom right, rgba(255, 121, 218, 0.85), rgba(147, 86, 220, 0.85));
+  box-shadow: 0 5px 15px silver;
+}
+
+@mixin gridmenu {
+  display: grid;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+

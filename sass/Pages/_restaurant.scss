@@ -1,56 +1,127 @@
-@media (min-width: 1024px) {
-  .list_food {
-    grid-area: restaurant;
-    display: grid;
+.list_food {
+  grid-area: restaurant;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px repeat(4, 250px);
+  grid-template-areas: "title"
+                           "item_a"
+                           "item_b"
+                           "item_c"
+                           "item_d";
+  grid-gap: 20px;
+  background: #F6F6F6;
+  padding: 20px;
+  margin-top: 40px;
+
+  @media (min-width: 500px) {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px repeat(3, 250px);
+    grid-template-areas: "title title"
+                           "item_a item_b"
+                           "item_c item_d";
+
+
+  }
+  @media (min-width: 1024px) {
     grid-template-rows: 70px 70px repeat(2, 250px) 70px;
     grid-template-areas: "title title"
                          "item_a item_c"
                          "item_a item_c"
                          "item_b item_d"
                          "item_b item_d";
-    grid-gap: 20px;
-    background: #F6F6F6;
-    padding: 20px;
+
   }
-  @include list-food;
+
+  .list_food-title {
+    display: flex;
+    align-items: end;
+    grid-area: title;
+  }
+
+  .list_food-card {
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px silver;
+    position: relative;
+  }
+
+  .list_food-figure {
+    height: 100%;
+  }
+
+  .list_food-new::before {
+    content: "Nouveau";
+    position: absolute;
+    background: #99E2D0;
+    right: 10px;
+    top: 10px;
+    min-width: 80px;
+    padding: 0 10px;
+    color: #008766;
+    font-size: 1.15rem;
+    height: 30px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px black;
+  }
+
+  .list_food-img {
+    height: calc(100% - 75px);
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+
+  }
+
+  .list_food-fig {
+    position: relative;
+    padding: 10px;
+  }
+
+  .list_food-love {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    font-size: 2rem;
+    transform: translateY(-50%);
+  }
+
+  .list_love-solid {
+    position: absolute;
+    bottom: 36%;
+    right: 25px;
+    font-size: 2rem;
+    transform: scale(0);
+    background: radial-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: transform 500ms;
+  }
+
+  .list_food-love:hover ~ .list_love-solid, .list_love-solid:hover {
+    transform: scale(1);
+  }
+
+
+  .item_a {
+    grid-area: item_a;
+  }
+
+  .item_b {
+    grid-area: item_b;
+  }
+
+  .item_c {
+    grid-area: item_c;
+  }
+
+  .item_d {
+    grid-area: item_d;
+  }
 }
 
-@media (min-width: 768px) {
-  .list_food {
-    grid-area: restaurant;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px repeat(3, 250px);
-    grid-template-areas: "title title"
-                         "item_a item_b"
-                         "item_c item_d";
-    grid-gap: 20px;
-    background: #F6F6F6;
-    padding: 20px;
-    margin-top: 40px;
-  }
-  @include list-food;
-}
-
-@media (max-width: 767px) {
-  .list_food {
-    grid-area: restaurant;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 70px repeat(4, 250px);
-    grid-template-areas: "title"
-                           "item_a"
-                           "item_b"
-                           "item_c"
-                           "item_d";
-    grid-gap: 20px;
-    background: #F6F6F6;
-    padding: 20px;
-    margin-top: 40px;
-  }
-  @include list-food;
-}
 
 
 
