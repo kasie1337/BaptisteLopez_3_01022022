@@ -183,7 +183,7 @@
     display: none;
   }
 
-  .menu_list-p:hover {
+  label.menu_list-info:hover .menu_list-p {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

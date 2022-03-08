@@ -74,9 +74,9 @@
   background: white;
   width: 100vw;
   height: 100vh;
-  opacity: 0;
   z-index: 0;
   animation: loader-opacity 2400ms cubic-bezier(1, 0.03, 1, 0.31);
+  opacity: 0;
 }
 
 @keyframes loader-opacity {
@@ -92,6 +92,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 .loader_style {
@@ -537,7 +538,7 @@ legend {
 .menu_list .menu_list-valid {
   display: none;
 }
-.menu_list .menu_list-p:hover {
+.menu_list label.menu_list-info:hover .menu_list-p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -549,6 +550,7 @@ legend {
   background: #353535;
   color: white;
   padding: 20px;
+  z-index: 0;
 }
 .bot_page .bot_page-title {
   font-family: Shrikhand, sans-serif, Droid Serif;
@@ -558,6 +560,10 @@ legend {
   height: 16px;
   width: 20px;
   margin-right: 5px;
+}
+.bot_page .mailto-color {
+  color: white;
+  z-index: 100000;
 }
 
 /*# sourceMappingURL=resto.css.map */

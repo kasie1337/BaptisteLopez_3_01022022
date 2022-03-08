@@ -1,30 +1,31 @@
 .loader_position {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    z-index: 0;
-    animation: loader-opacity 2400ms cubic-bezier(1, 0.03, 1, 0.31);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  animation: loader-opacity 2400ms cubic-bezier(1, 0.03, 1, 0.31);
+  opacity: 0;
 }
 
 @keyframes loader-opacity {
-    0% {
-        opacity: 1;
-        z-index: 9999;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 .loader_style {
   height: 20px;
@@ -107,49 +108,49 @@
 }
 
 @keyframes loader {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    75% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .up_page-btn {
-    margin-top: 25px;
-    border: unset;
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    color: white;
-    border-radius: 30px;
-    height: 50px;
-    padding: 0 20px 0 20px;
-    box-shadow: 0 5px 10px silver;
-    font-family: roboto, sans-serif, "Arial Black";
-    z-index: 1;
+  margin-top: 25px;
+  border: unset;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border-radius: 30px;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  box-shadow: 0 5px 10px silver;
+  font-family: roboto, sans-serif, "Arial Black";
+  z-index: 1;
 }
 
 .up_page-btn:hover {
-    background: linear-gradient(to bottom right, rgba(255, 121, 218, 0.85), rgba(147, 86, 220, 0.85));
-    box-shadow: 0 5px 15px silver;
+  background: linear-gradient(to bottom right, rgba(255, 121, 218, 0.85), rgba(147, 86, 220, 0.85));
+  box-shadow: 0 5px 15px silver;
 }
 
 .up_page-btn-menu {
-    width: 190px;
+  width: 190px;
 }
 
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -212,35 +213,33 @@ select {
 }
 
 @font-face {
-    font-family: "roboto";
-    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+  font-family: "roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 }
 @font-face {
-    font-family: "Shrikhand";
-    src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+  font-family: "Shrikhand";
+  src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 }
 :root {
-    font-size: 10px;
+  font-size: 10px;
 }
-
 @media (min-width: 768px) {
-    :root {
-        font-size: 11px;
-    }
+  :root {
+    font-size: 11px;
+  }
 }
-
 @media (min-width: 1024px) {
-    :root {
-        font-size: 12px;
-    }
+  :root {
+    font-size: 12px;
+  }
 }
 
 li {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 label, input {
-    font-size: 1.55rem;
+  font-size: 1.55rem;
 }
 
 h1 {
@@ -282,19 +281,17 @@ legend {
 .body ul > li {
   counter-increment: number;
 }
-
 @media (min-width: 768px) {
-    .body {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, 400px) 700px auto;
-        grid-template-areas: "header header" "working working" "restaurant restaurant" "footer footer";
-    }
+  .body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 400px) 700px auto;
+    grid-template-areas: "header header" "working working" "restaurant restaurant" "footer footer";
+  }
 }
-
 @media (min-width: 1024px) {
-    .body {
-        grid-template-rows: repeat(2, 400px) auto auto;
-    }
+  .body {
+    grid-template-rows: repeat(2, 400px) auto auto;
+  }
 }
 
 .up_page {
@@ -339,26 +336,24 @@ legend {
   background: #FFFFFF;
   padding: 0 20px;
 }
-
 @media (min-width: 768px) {
-    .how_work {
-        padding: 0 30px;
-        display: grid;
-        margin-top: 0;
-    }
+  .how_work {
+    padding: 0 30px;
+    display: grid;
+    margin-top: 0;
+  }
 }
 .how_work .how_work-title {
   margin-bottom: 25px;
   display: grid;
   justify-content: left;
 }
-
 @media (min-width: 768px) {
-    .how_work .how_work-title {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
+  .how_work .how_work-title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }
 .how_work .how_work-ul {
   display: grid;
@@ -367,13 +362,12 @@ legend {
   grid-gap: 15px;
   background: #FFFFFF;
 }
-
 @media (min-width: 768px) {
-    .how_work .how_work-ul {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 75px;
-        grid-gap: 25px;
-    }
+  .how_work .how_work-ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 75px;
+    grid-gap: 25px;
+  }
 }
 .how_work .how_work-position {
   padding: 0 0 0 30px;
@@ -427,20 +421,18 @@ legend {
   padding: 20px;
   margin-top: 40px;
 }
-
 @media (min-width: 768px) {
-    .list_food {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 70px repeat(2, 250px);
-        grid-template-areas: "title title" "item_a item_b" "item_c item_d";
-    }
+  .list_food {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px repeat(2, 250px);
+    grid-template-areas: "title title" "item_a item_b" "item_c item_d";
+  }
 }
-
 @media (min-width: 1024px) {
-    .list_food {
-        grid-template-rows: 70px 70px repeat(2, 250px) 70px;
-        grid-template-areas: "title title" "item_a item_c" "item_a item_c" "item_b item_d" "item_b item_d";
-    }
+  .list_food {
+    grid-template-rows: 70px 70px repeat(2, 250px) 70px;
+    grid-template-areas: "title title" "item_a item_c" "item_a item_c" "item_b item_d" "item_b item_d";
+  }
 }
 .list_food .list_food-title {
   display: flex;
@@ -522,6 +514,7 @@ legend {
   background: #353535;
   color: white;
   padding: 20px;
+  z-index: 0;
 }
 .bot_page .bot_page-title {
   font-family: Shrikhand, sans-serif, Droid Serif;
@@ -531,6 +524,10 @@ legend {
   height: 16px;
   width: 20px;
   margin-right: 5px;
+}
+.bot_page .mailto-color {
+  color: white;
+  z-index: 100000;
 }
 
 /*# sourceMappingURL=main.css.map */

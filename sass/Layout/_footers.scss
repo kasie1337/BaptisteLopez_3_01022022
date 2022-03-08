@@ -3,6 +3,7 @@
   background: #353535;
   color: white;
   padding: 20px;
+  z-index: 0;
 
   .bot_page-title {
     font-family: Shrikhand, sans-serif, Droid Serif;
@@ -13,5 +14,10 @@
     height: 16px;
     width: 20px;
     margin-right: 5px;
+  }
+
+  .mailto-color {
+    color: white;
+    z-index: 100000;
   }
 }

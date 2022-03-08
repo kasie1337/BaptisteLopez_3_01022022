@@ -6,9 +6,9 @@
   background: white;
   width: 100vw;
   height: 100vh;
-  opacity: 0;
   z-index: 0;
   animation: loader-opacity 2400ms cubic-bezier(1, 0.03, 1, 0.31);
+  opacity: 0;
 }
 
 @keyframes loader-opacity {
@@ -24,6 +24,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 
