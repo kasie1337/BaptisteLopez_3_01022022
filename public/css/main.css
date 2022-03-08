@@ -311,6 +311,11 @@ legend {
   display: flex;
   justify-content: center;
 }
+
+.up_page .up_page-icon {
+  width: 20px;
+}
+
 .up_page .up_page-search {
   align-items: center;
   position: relative;
@@ -327,7 +332,7 @@ legend {
   background: #EAEAEA;
   border: unset;
   text-align: center;
-  width: 80%;
+  width: 65%;
 }
 
 .how_work {
