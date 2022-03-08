@@ -184,11 +184,17 @@
   }
 
   label.menu_list-info:hover .menu_list-p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 200px;
-}
+    @media (max-width: 440px) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 200px;
+    }
+    @media (min-width: 768px) {
+      overflow: unset;
+    }
+  }
+
 }
 
 

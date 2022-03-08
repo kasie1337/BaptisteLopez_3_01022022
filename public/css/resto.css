@@ -538,11 +538,18 @@ legend {
 .menu_list .menu_list-valid {
   display: none;
 }
-.menu_list label.menu_list-info:hover .menu_list-p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 200px;
+@media (max-width: 440px) {
+  .menu_list label.menu_list-info:hover .menu_list-p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .menu_list label.menu_list-info:hover .menu_list-p {
+    overflow: unset;
+  }
 }
 
 .bot_page {
