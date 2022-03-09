@@ -1,10 +1,10 @@
 @import "Utils/mixins";
 @import "Components/loader";
 @import "Components/buttons";
-@import "Base/normalizer";
+@import "Vendors/normalizer";
 @import "Base/root";
 @import "Pages/body";
-@import "Layout/uppage";
+@import "Layout/header";
 @import "Pages/workings";
 @import "Pages/restaurant";
 @import "Layout/footers";

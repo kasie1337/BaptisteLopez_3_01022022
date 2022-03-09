@@ -355,11 +355,9 @@ legend {
   display: flex;
   justify-content: center;
 }
-
 .up_page .up_page-icon {
   width: 20px;
 }
-
 .up_page .up_page-search {
   align-items: center;
   position: relative;
