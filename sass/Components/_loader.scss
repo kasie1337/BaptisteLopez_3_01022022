@@ -37,11 +37,6 @@
   border-radius: 40px;
 }
 
-.loader_style:nth-child(0) {
-  transform: rotate(0deg) translate(-50%, -50%);
-  animation-delay: 0s;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-}
 
 .loader_style:nth-child(1) {
   transform: rotate(80deg) translate(-50%, -50%);

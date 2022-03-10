@@ -35,12 +35,6 @@
   border-radius: 40px;
 }
 
-.loader_style:nth-child(0) {
-  transform: rotate(0deg) translate(-50%, -50%);
-  animation-delay: 0s;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-}
-
 .loader_style:nth-child(1) {
   transform: rotate(80deg) translate(-50%, -50%);
   animation-delay: 0.1s;
@@ -310,11 +304,9 @@ legend {
     align-items: center;
     justify-content: center;
 }
-
 .up_page .up_page-icon {
     width: 20px;
 }
-
 .up_page .up_page-city {
     font-weight: 700;
     background: #EAEAEA;
@@ -322,7 +314,6 @@ legend {
     text-align: center;
     width: 65%;
 }
-
 .up_page .up_page-sd-title {
     padding: 45px 45px 0 45px;
 }
@@ -388,26 +379,21 @@ legend {
   align-items: center;
   content: counter(number);
 }
-
 .how_work li.how_work-list:hover {
     background: #F5EDFF;
 }
-
 .how_work .how_work-box {
     display: flex;
     align-items: center;
 }
-
 .how_work .how_work-color {
     background: #F5EDFF;
 }
-
 .how_work .how_work-position {
     padding: 0 0 0 30px;
     color: gray;
     width: 70px;
 }
-
 .how_work .how_work-i {
     color: #9356DC;
 }
@@ -421,14 +407,15 @@ legend {
     grid-gap: 20px;
     background: #F6F6F6;
     padding: 20px;
-  margin-top: 40px;
+    margin-top: 40px;
 }
+
 @media (min-width: 768px) {
-  .list_food {
-    grid-template-columns: 1fr 1fr;
-      grid-template-rows: 70px repeat(2, 250px);
-      grid-template-areas: "title title" "item_a item_b" "item_c item_d";
-  }
+    .list_food {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px repeat(2, 250px);
+        grid-template-areas: "title title" "item_a item_b" "item_c item_d";
+    }
 }
 
 @media (min-width: 1024px) {
@@ -437,35 +424,29 @@ legend {
         grid-template-areas: "title title" "item_a item_c" "item_a item_c" "item_b item_d" "item_b item_d";
     }
 }
-
 .list_food .item_a {
     grid-area: item_a;
 }
-
 .list_food .item_b {
     grid-area: item_b;
 }
-
 .list_food .item_c {
     grid-area: item_c;
 }
-
 .list_food .item_d {
     grid-area: item_d;
 }
-
 .list_food .list_food-title {
     display: flex;
     align-items: end;
     grid-area: title;
 }
-
 .list_food .list_food-card {
     height: 100%;
     background: white;
     border-radius: 20px;
     box-shadow: 0 5px 10px silver;
-  position: relative;
+    position: relative;
 }
 .list_food .list_food-figure {
   height: 100%;
