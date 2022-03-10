@@ -10,17 +10,9 @@
 
   }
 
-  .up_page-sd-title {
-    padding: 45px 45px 0 45px;
-  }
-
   .up_page-box {
     display: flex;
     justify-content: center;
-  }
-
-  .up_page-icon {
-    width: 20px;
   }
 
   .up_page-search {
@@ -36,12 +28,20 @@
     justify-content: center;
   }
 
+  .up_page-icon {
+    width: 20px;
+  }
+
   .up_page-city {
     font-weight: 700;
     background: #EAEAEA;
     border: unset;
     text-align: center;
     width: 65%;
+  }
+
+  .up_page-sd-title {
+    padding: 45px 45px 0 45px;
   }
 }
 

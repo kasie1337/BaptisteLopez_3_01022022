@@ -32,6 +32,22 @@
 
   }
 
+  .item_a {
+    grid-area: item_a;
+  }
+
+  .item_b {
+    grid-area: item_b;
+  }
+
+  .item_c {
+    grid-area: item_c;
+  }
+
+  .item_d {
+    grid-area: item_d;
+  }
+
   .list_food-title {
     display: flex;
     align-items: end;
@@ -102,22 +118,6 @@
 
   .list_food-love:hover ~ .list_love-solid, .list_love-solid:hover {
     transform: scale(1);
-  }
-
-  .item_a {
-    grid-area: item_a;
-  }
-
-  .item_b {
-    grid-area: item_b;
-  }
-
-  .item_c {
-    grid-area: item_c;
-  }
-
-  .item_d {
-    grid-area: item_d;
   }
 }
 
